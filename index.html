@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peddy-Website-Design</title>
+    
+    <link rel="shortcut icon" href="./images/logo.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primaryColor': '#FFFFFF',
+              'secondaryColor': '#0E7A81',
+              'primaryTextColor': '#131313',
+              'secondaryTextColor': '#13131360',
+              'tertiaryTextColor': 'rgba(17, 17, 17, 0.4)',
+              'userBorderColor': '#0E7A8120',
+              'secondaryBorderColor': 'rgba(17, 17, 17, 0.3)',              
+            },
+            fontFamily: {
+              "lato": ["Lato"],
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="font-lato">
+    
+    <header>
+    <!-- Navbar start here -->
+    <nav class="container w-11/12 mx-auto py-10">
+      <div class="navbar-content lg:mx-4">
+        <div class="navbar flex justify-between items-center mx-auto">
+          <div class="navbar-start text-left">
+            <a class="flex items-center gap-2" href="index.html">
+              <img src="./images/logo.webp" alt="Logo">
+              <span class="text-2xl md:text-3xl font-extrabold text-primaryTextColor">Peddy</span>
+            </a>           
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu-options flex gap-9 px-1 font-medium">
+              <li><a class="text-xl font-bold hover:font-bold transition duration-300 ease-in-out" href="#home">Home</a></li>
+              <li><a class="text-xl text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold text-black" href="#services">Shop</a></li>
+              <li><a class="text-xl text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold" href="#contact-us">Contact</a>
+            </ul>
+          </div>
+          <div class="navbar-end flex">
+            <div class="item gap-2 items-center">
+              <a href="#">
+                <i class="fa-regular fa-user p-3 bg-white rounded-full border-2 border-solid border-userBorderColor"></i>
+              </a>
+            </div>
+            <div class="dropdown lg:hidden relative ml-2">
+              <div tabindex="0" role="button" class="btn p-4 bg-userBorderColor border-2 border-solid rounded-full lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0">
+                <li><a class="text-xl font-bold hover:font-bold transition duration-300 ease-in-out" href="#home">Home</a></li>
+              <li><a class="text-xl text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold text-black" href="#">Shop</a></li>
+              <li><a class="text-xl text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold" href="#">Contact</a>
+              </ul>
+            </div>
+          </div>
+        </div>       
+      </div>
+    </nav>
+    <!-- Navbar ends here -->
+    </header>
+
+    <main>
+
+
+    </main>
+    
+    <script src="./js/main.js"></script>
+  </body>
+</html>
