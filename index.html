@@ -1,193 +1,258 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
-  <head>
+<html lang="en" class="scroll-smooth">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peddy-Website-Design</title>
-    
     <link rel="shortcut icon" href="./images/logo.webp" type="image/x-icon">
+
+    <!-- all fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              'primaryColor': '#FFFFFF',
-              'secondaryColor': '#0E7A81',
-              'primaryTextColor': '#131313',
-              'secondaryTextColor': '#13131360',
-              'tertiaryTextColor': 'rgba(17, 17, 17, 0.4)',
-              'userBorderColor': '#0E7A8120',
-              'secondaryBorderColor': 'rgba(17, 17, 17, 0.3)', 
-              'emailInputColor': '#FFFFFF05',
-              'footerInfoColor': '#FFFFFF90',              
-              'footerMenuColor': '#FFFFFF60',              
-            },
-            fontFamily: {
-              "lato": ["Lato"],
-            }
-          }
-        }
-      }
-    </script>
-  </head>
-  <body class="font-lato">
-    
-    <header>
-    <!-- Navbar starts here -->
-    <nav class="container w-11/12 mx-auto py-10">
-      <div class="navbar-content lg:mx-4">
-        <div class="navbar flex justify-between items-center mx-auto">
-          <div class="navbar-start text-left">
-            <a class="flex items-center gap-2" href="index.html">
-              <img src="./images/logo.webp" alt="Logo">
-              <span class="text-2xl md:text-3xl font-extrabold text-primaryTextColor">Peddy</span>
-            </a>           
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu-options flex gap-9 px-1 font-medium">
-              <li><a class="text-xl font-bold hover:font-bold transition duration-300 ease-in-out" href="#home">Home</a></li>
-              <li><a class="text-xl text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold text-black" href="#services">Shop</a></li>
-              <li><a class="text-xl text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold" href="#contact-us">Contact</a>
-            </ul>
-          </div>
-          <div class="navbar-end flex">
-            <div class="item gap-2 items-center">
-              <a href="#">
-                <i class="fa-regular fa-user p-3 bg-white rounded-full border-2 border-solid border-userBorderColor"></i>
-              </a>
-            </div>
-            <div class="dropdown lg:hidden relative ml-2">
-              <div tabindex="0" role="button" class="btn p-4 bg-userBorderColor border-2 border-solid rounded-full lg:hidden">
-                <i class="fa-solid fa-bars"></i>
-              </div>
-              <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0">
-                <li><a class="text-xl font-bold hover:font-bold transition duration-300 ease-in-out" href="#home">Home</a></li>
-              <li><a class="text-xl text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold text-black" href="#">Shop</a></li>
-              <li><a class="text-xl text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold" href="#">Contact</a>
-              </ul>
-            </div>
-          </div>
-        </div>       
-      </div>
-    </nav>
-    <!-- Navbar ends here -->
-     <!-- pet Section Starts Here -->
-    <div class="hero-section mb-10">
-        <div class="container w-11/12 mx-auto px-5 lg:px-20 mt-4">
-          <div class="hero-content mx-3 flex flex-col justify-center">         
-            <div class="hero-description md:w-10/12 mx-auto flex flex-col justify-center">
 
-                <div class="text-with-emoji flex justify-center items-center">
-                    <h2 class="text-center text-xl md:text-2xl lg:text-3xl text-secondaryTextColor font-bold mb-8 flex items-center">
-                      Bringing Families Together
-                      <span class="inline-flex">
-                        <img src="./images/heart on fire.png" alt="heart" class="h-6 md:h-8 lg:h-10 w-auto align-middle">
-                      </span>
-                    </h2>
-                  </div>
-                             
-              <h1 class="text-center text-3xl md:text-4xl lg:text-6xl font-extrabold text-primaryTextColor mb-6 w-3/4 mx-auto">
-                Your Path to Adoption Starts Here
-              </h1>
-              <p class="text-primaryTextColor text-base font-bold text-center w-3/4 mx-auto">
-                Finding the right pet is an emotional journey. The use of kind and encouraging words can inspire visitors to take the step that changes both their lives and their future pet’s forever.
-              </p>
-              <div class="view-more-btn mx-auto mt-8">
-                <button class="btn sm:w-full bg-secondaryColor border-none"><a class="px-8 py-4 text-primaryColor font-bold" href="#">View &thinsp;More</a></button>  
+    <!-- tailwind config file -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary: '#0E7A81',
+                        secondary: '#131313'
+                    },
+                    fontFamily: {
+                        lato: ['Lato', 'Arial', 'SansSerif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-lato">
+    <header class="container md:mx-auto">
+        <!-- Navbar starts here -->
+        <nav class="container w-11/12 mx-auto py-10">
+          <div class="navbar-content lg:mx-4">
+            <div class="navbar flex justify-between items-center mx-auto">
+              <div class="navbar-start text-left">
+                <a class="flex items-center gap-2" href="index.html">
+                  <img src="./images/logo.webp" alt="Logo">
+                  <span class="text-2xl md:text-3xl font-extrabold text-primaryTextColor">Peddy</span>
+                </a>           
               </div>
-            </div>
-            <div class="hero-image">
-              <img class="mx-auto mt-6" src="./images/pet.webp" alt="">
-            </div>
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu-options flex gap-9 px-1 font-medium">
+                  <li><a class="text-xl font-bold hover:font-bold transition duration-300 ease-in-out" href="#home">Home</a></li>
+                  <li><a class="text-xl text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold text-black" href="#services">Shop</a></li>
+                  <li><a class="text-xl text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold" href="#contact-us">Contact</a>
+                </ul>
+              </div>
+              <div class="navbar-end flex">
+                <div class="item gap-2 items-center">
+                  <a href="#">
+                    <i class="fa-regular fa-user p-3 bg-white rounded-full border-2 border-solid border-userBorderColor"></i>
+                  </a>
+                </div>
+                <div class="dropdown lg:hidden relative ml-2">
+                  <div tabindex="0" role="button" class="btn p-4 bg-userBorderColor border-2 border-solid rounded-full lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                  </div>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0">
+                    <li><a class="text-xl font-bold hover:font-bold transition duration-300 ease-in-out" href="#home">Home</a></li>
+                  <li><a class="text-xl text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold text-black" href="#">Shop</a></li>
+                  <li><a class="text-xl text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold" href="#">Contact</a>
+                  </ul>
+                </div>
+              </div>
+            </div>       
           </div>
+        </nav>
+         <!-- Navbar ends here -->
+      
+        <!-- pet Section Starts Here -->
+        
+<div class="hero-section mb-10">
+  <div class="container w-11/12 mx-auto px-5 lg:px-20 mt-4">
+    <div class="hero-content mx-3 flex flex-col justify-center">
+      
+    
+      <div class="hero-description md:w-10/12 mx-auto flex flex-col justify-center">
+        <div class="text-with-emoji flex justify-center items-center">
+          <h2 class="text-center text-xl md:text-2xl lg:text-3xl text-secondary text-opacity-60 font-bold mb-8 flex items-center">
+            Bringing Families Together
+            <span class="inline-flex">
+              <img src="./images/heart.jpg" alt="heart" class="h-6 md:h-8 lg:h-10 w-auto align-middle">
+            </span>
+          </h2>
+        </div>
+
+        
+        <h1 class="text-center text-3xl md:text-4xl lg:text-6xl font-extrabold text-primaryTextColor mb-6 w-3/4 mx-auto">
+          Your Path to Adoption Starts Here
+        </h1>
+
+        <p class="text-primaryTextColor text-base font-bold text-center w-3/4 mx-auto">
+          Finding the right pet is an emotional journey. The use of kind and encouraging words can inspire visitors to take the step that changes both their lives and their future pet’s forever.
+        </p>
+
+        <!-- View More Button -->
+        <div class="view-more-btn mx-auto mt-8">
+          <button class="btn sm:w-full bg-primary text-white hover:bg-primary hover:bg-opacity-90 border-none">
+            <a class="px-8 py-4 text-white font-bold" href="#">View &thinsp;More</a>
+          </button>  
         </div>
       </div>
-      <!-- pet Section Ends Here -->
+
+     
+      <div class="hero-image">
+        <img class="mx-auto mt-6" src="./images/pet.webp" alt="pet">
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Pet Section Ends Here --> 
     </header>
 
-    <main>
-        <section id="best-freind" class="adopt-container py-12 md:py-20 lg:py-28">
-            <div class="container w-11/12 mx-auto px-5">
-              <div class="adopt-content mx-3">
-                <div class="adopt-title w-3/4 mx-auto flex flex-col justify-center items-center">
-                  <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-center mb-3">Adopt  Your  Best Friend</h2>
-                  <p class=" font-bold text-center text-tertiary-color">Adopting a pet means more than finding a companion—it’s about discovering unconditional love, loyalty, and joy.When you adopt, you're not just bringing home a pet; find a best friend who will stand by your side through every moment.</p>
-                </div>        
-              </div>       
-            </div>     
-          </section>
+    <main class="container md:mx-auto p-3" id="main">
+        <!-- Adopt  Your  Best Friend start from here -->
+        <section class="flex flex-col justify-center items-center">
+            <div class="md:3/4 lg:w-2/3 flex flex-col gap-5 text-center">
+                <h2 class="text-2xl font-bold">Adopt Your Best Friend</h2>
+                <p class="text-secondary font-bold  text-opacity-75">It found that people with furry friends tend to spend more time outdoors, exercise more often, feel more loved and just generally be happier than those without a dog or cat, often by significant margins.
 
+                </p>
+            </div>
+
+            <!-- fetches categories -->
+            <div id="category-list" class="grid grid-cols-2 lg:grid-cols-4 gap-7 w-full py-12">
+
+            </div>
+
+
+        </section>
+
+        <!-- Best Deal For you section start from here -->
+        <section>
+            <div class="flex items-center justify-between w-full pb-10">
+                <h2 class="text-2xl font-bold">Best Deal For you</h2>
+                <button id="sort-btn"
+                    class="btn bg-primary text-white hover:bg-primary hover:bg-opacity-90 border-none px-7 text-lg">
+                    Sort by Price</button>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
+                <aside class="lg:col-span-3 flex flex-col items-center">
+                    <span class="loading loading-bars loading-lg bg-primary hidden" id="loader"></span>
+                    <section id="display-pet" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
+                    </section>
+
+                </aside>
+
+                <!-- like pet -->
+                <aside class="border rounded-lg p-3 order-1">
+                    <section class="grid grid-cols-2 gap-3 w-full" id="liked-pet">
+                        <p class="text-center text-stone-400 col-span-2" id="no-pet">No favorite pet selected yet!</p>
+                    </section>
+
+                </aside>
+
+            </div>
+
+        </section>
+        <!-- Modal -->
+        <dialog id="custom-modal" class="modal">
+            <div class="modal-box">
+                <div id="modal-container" class="pb-0">
+                </div>
+                <div class="modal-action">
+                    <form method="dialog" class="w-full">
+                        
+                        <button class="btn text-primary border-primary bg-primary bg-opacity-20 w-full"
+                            id="cancel-button">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
     </main>
-     <!-- Footer section starts here -->
-     <footer class="w-full bg-primaryTextColor mt-8">
-      <section class="container lg:w-11/12 mx-auto width py-20 flex lg:justify-between lg:flex-row flex-col gap-12 lg:px-0 px-10">
-          <div class="left-side-content text-primaryColor flex flex-col gap-2 items-start">
-            <a class="flex items-center gap-2" href="index.html">
-              <img src="./images/logo.webp" alt="Logo">
-              <span class="text-2xl md:text-3xl font-extrabold text-primaryColor">Peddy</span>
-            </a> 
-            <div class="info mt-6 flex flex-col gap-1">
-              <p class="text-sm text-footerInfoColor">Location: av. Washington 165, NY CA 54003</p>
-              <p class="text-sm text-footerInfoColor">Phone: +31 85 964 47 25</p>
-              <p class="text-sm text-footerInfoColor">Email: info@yourdomain.com</p>
-              <p class="text-sm text-footerInfoColor">Openings hours: 9.00 AM - 5.00 PM</p>
-            </div>
-            <div class="icons flex items-center gap-4 mt-2">
-              <a><img class="w-8" src="./images/facebook.png" alt=""></a>
-              <a><img class="w-9" src="./images/twitter.png" alt=""></a>
-              <a><img class="w-12" src="./images/youtube.webp" alt=""></a>
-              <a><img class="w-8" src="./images/instagram.webp" alt=""></a>
-            </div> 
-          </div>
-          <div class="middle-content text-primaryColor flex flex-col gap-2 items-start">
-              <h2 class="text-xl lg:text-xl font-bold text-primaryColor mb-8 ">Useful Links</h2>
-              <ul class="flex flex-col gap-3">
-                <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#home">Home</a></li>
-                <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#services">About Us</a>
-                </li>
-                <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#portfolio">Animals</a>
-                </li>
-                <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#blogs">Foundation</a></li>
-                <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#contact-us">Contact</a>
-                </li>
-              </ul>
-          </div>
-          <div class="text-primaryColor flex flex-col gap-2 items-start">
-            <h2 class="text-xl lg:text-xl font-bold text-primaryColor mb-8">Drop a Message</h2>
-            
-            <div class="flex items-center gap-2 bg-white bg-opacity-5 w-full p-2 rounded"> 
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                fill="currentColor"
-                class="h-4 w-4 text-white">
-                <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
-                <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
-              </svg>
-              
-              <input class="w-full bg-transparent text-white placeholder-opacity-60 placeholder-white outline-none font-inter" type="text" placeholder="Enter your email" />
-            </div>
-            
-            <div class="subscribe-btn mt-4 w-full">
-              <button class="btn w-full bg-secondaryColor border-none">
-                <a class="px-8 py-4 text-primaryColor font-bold" href="#">Subscribe</a>
-              </button>
-            </div>
-          </div>
+
+    <!-- Footer section starts here -->
+    <footer class="w-full bg-black mt-8">
+      <section class="container lg:w-11/12 mx-auto py-20 flex lg:justify-between lg:flex-row flex-col gap-12 lg:px-0 px-10">
         
+        <!-- Left side content -->
+        <div class="left-side-content text-white flex flex-col gap-2 items-start">
+          <a class="flex items-center gap-2" href="index.html">
+            <img src="./images/logo.webp" alt="Logo">
+            <span class="text-2xl md:text-3xl font-extrabold text-white">Peddy</span>
+          </a> 
+          <div class="info mt-6 flex flex-col gap-1">
+            <p class="text-sm text-gray-400">Location: av. Washington 165, NY CA 54003</p>
+            <p class="text-sm text-gray-400">Phone: +31 85 964 47 25</p>
+            <p class="text-sm text-gray-400">Email: info@yourdomain.com</p>
+            <p class="text-sm text-gray-400">Openings hours: 9.00 AM - 5.00 PM</p>
+          </div>
+          <div class="icons flex items-center gap-4 mt-2">
+            <a href="#"><img class="w-8" src="./images/facebook.png" alt=""></a>
+            <a href="#"><img class="w-9" src="./images/twitter.png" alt=""></a>
+            <a href="#"><img class="w-12" src="./images/youtube.webp" alt=""></a>
+            <a href="#"><img class="w-8" src="./images/instagram.webp" alt=""></a>
+          </div> 
+        </div>
+        
+        <!-- Links -->
+        <div class="flex flex-col gap-5">
+          <h2 class="text-lg font-bold text-white">Useful Links</h2>
+          <ul class="text-gray-400 flex flex-col gap-3">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#" class="hover:underline">About Us</a></li>
+            <li><a href="#" class="hover:underline">Animals</a></li>
+            <li><a href="#" class="hover:underline">Foundation</a></li>
+            <li><a href="#" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+    
+        <!-- Drop a Message Section -->
+        <div class="text-white flex flex-col gap-2 items-start">
+          <h2 class="text-xl lg:text-xl font-bold text-white mb-8">Drop a Message</h2>
+          
+          <div class="flex items-center gap-2 bg-white bg-opacity-5 w-full p-2 rounded">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="h-4 w-4 text-white">
+              <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+              <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+            </svg>
+            <input class="w-full bg-transparent text-white placeholder-opacity-60 placeholder-white outline-none font-inter" type="text" placeholder="Enter your email" />
+          </div>
+          
+          <div class="subscribe-btn mt-4 w-full">
+            <button class="btn w-full bg-[#FF5400] border-none">
+              <a class="px-8 py-4 text-white font-bold" href="#">Subscribe</a>
+            </button>
+          </div>
+        </div>
+    
       </section>
     </footer>
-    <!-- Footer section ends here -->
+     <!-- Footer section ends here -->
+    <script src="./scripts/utilities.js"></script>
+    <script src="./scripts/loadData.js"></script>
+    <script src="./scripts/pet.js"></script>
+</body>
 
-    
-    <script src="./js/main.js"></script>
-  </body>
 </html>
